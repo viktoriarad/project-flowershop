@@ -356,12 +356,31 @@ body {
 }
 
 
+/* --------------------------------------------------------------- */
+
+.gallety-title {
+  padding-top: 150px;
+}
+
+.gallery__photo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
 
 
 
+.gallery__container {
+  width: 30%;
+  margin: 30px 20px;
+  overflow: hidden;
+}
 
 
-
+.gallery__img {
+  width: 100%;
+}
 
 
 
