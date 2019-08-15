@@ -4,10 +4,10 @@
   box-sizing: border-box;
 }
 
-.page {
+body {
   background-color: #F8F8FA;
-  height: 100%;
 }
+
 
 .navigation {
   position: fixed;
@@ -341,6 +341,29 @@
   color: #000;
   text-decoration: none;
 }
+
+/* ---------------------------------------------------------- */
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 120px;
+}
+
+.footer__container--padding {
+  padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* font-family: 'Poppins', sans-serif;
 font-family: 'Dancing Script', cursive; */
