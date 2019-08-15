@@ -373,13 +373,23 @@ body {
 
 .gallery__container {
   width: 30%;
-  margin: 30px 20px;
+  margin: 30px 20px 0 20px;
   overflow: hidden;
 }
 
 
 .gallery__img {
+  height: 100%;
   width: 100%;
+  object-fit: cover;
+  background-color: black;
+  opacity: 0.1;
+  will-change: opacity;
+  transition: all 0.3s;
+}
+
+.gallery__img--loaded {
+  opacity: 1;
 }
 
 
