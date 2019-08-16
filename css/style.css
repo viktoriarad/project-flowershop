@@ -481,14 +481,8 @@ body {
   width: 100%;
   object-fit: cover;
   background-color: black;
-  opacity: 0.1;
-  will-change: opacity;
-  transition: all 0.3s;
 }
 
-.gallery__img--loaded {
-  opacity: 1;
-}
 
 
 @media only screen and (max-device-height: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
