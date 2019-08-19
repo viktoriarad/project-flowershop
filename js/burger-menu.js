@@ -1,4 +1,4 @@
-const burgerMenu = document.querySelector('.burger-menu__burger-icon');
+const burgerMenu = document.querySelector('.burger-menu__container-burger-icon');
 const menuList = document.querySelector('.burger-menu__list');
 const iconMenu = document.querySelector('.burger-menu__icon');
 const allIconPlus = Array.from(document.querySelectorAll('.fa-plus-square'))
@@ -15,13 +15,13 @@ const hideAllSubMenus = () => {
   })
 
   allSubMenus.forEach(el => {
-    el.classList.remove('burger-menu__visible-list--display-block')
+    el.classList.remove('burger-menu__visible-list--visibility')
   })
 
 }
 
 burgerMenu.addEventListener('click', function () {
-  menuList.classList.toggle('burger-menu__list--display-block');
+  menuList.classList.toggle('burger-menu__list--visibility-visible');
 })
 
 allIconPlus.forEach(el => {
@@ -31,7 +31,7 @@ allIconPlus.forEach(el => {
     const subMenuList = minusIcon.nextElementSibling;
     el.classList.toggle('fa-plus-square-hide');
     minusIcon.classList.toggle('fa-minus-square-active');
-    subMenuList.classList.toggle('burger-menu__visible-list--display-block');
+    subMenuList.classList.toggle('burger-menu__visible-list--visibility');
   })
 })
 
@@ -40,8 +40,8 @@ allIconMinus.forEach(el => {
   el.addEventListener('click', function () {
     const plusIcon = el.previousElementSibling;
     const subMenuList = el.nextElementSibling;
-    el.classList.toggle('fa-plus-square-hide');
-    plusIcon.classList.toggle('fa-minus-square-active');
-    subMenuList.classList.toggle('burger-menu__visible-list--display-block');
+    el.classList.toggle('fa-minus-square-active');
+    plusIcon.classList.toggle('fa-plus-square-hide');
+    subMenuList.classList.toggle('burger-menu__visible-list--visibility');
   })
 })
